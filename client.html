@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client WebRTC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        video {
+            max-width: 100%;
+            width: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Client WebRTC</h1>
+
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <div>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/client.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client unity WebRTC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        video {
+            max-width: 100%;
+            width: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Client unity WebRTC</h1>
+    <h3>Video local</h3>
+    <video id="localVideo" autoplay playsinline></video>
+    <hr>
+    <h3>Video remoto</h3>
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <div>
+        <button id="callButton">Call</button>
+        <button id="sendSignal">Signal</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/unity_client.js"></script>
+</body>
+
+</html>
